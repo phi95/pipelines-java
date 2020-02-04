@@ -1,16 +1,7 @@
-stages:
-  - stage: Deploy
-    jobs:
-    - job: deploy dev
-      steps:
-      - bash: echo "dev"
-      trigger:
-      - development
-      environment: dev
-      
-      - job: deploy qa
-      steps:
-      - bash: echo "qa"
-      trigger:
-      - qa
-      environment: qa
+resources:
+  pipelines:
+  - pipeline: azure-pipelines
+  repositories:
+  - repository: azure pipelines  # identifier (A-Z, a-z, 0-9, and underscore)
+    type: git  # see the following "Type" topic
+    name: azure-pipelines  # repository name (format depends on `type`)
