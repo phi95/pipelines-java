@@ -1,8 +1,8 @@
 resources:
   repositories:
   - repository: template-folder  # identifier (A-Z, a-z, 0-9, and underscore)
-    type: git  # see the following "Type" topic
-    name: azure-pipelines  # repository name (format depends on `type`)
+    type: github  # see the following "Type" topic
+    name: phi95/azure-pipelines  # repository name (format depends on `type`)
 
 extends:
   template: stages-template.yml@template-folder
