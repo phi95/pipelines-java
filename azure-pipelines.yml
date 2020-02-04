@@ -5,6 +5,6 @@ resources:
     name: azure-pipelines  # repository name (format depends on `type`)
 
 extends:
-  template: stages-template.yml
+  template: stages-template.yml@azure-pipelines
   parameters:
     name: 'hello'
