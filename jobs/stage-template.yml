@@ -1,0 +1,9 @@
+parameters:
+  name: ''
+  
+stages:
+- stage: Test
+  jobs:
+  - job: test1
+    steps:
+    - bash: echo ${{ parameters.name }}
