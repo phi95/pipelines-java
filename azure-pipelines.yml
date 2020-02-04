@@ -1,6 +1,7 @@
 resources:
   pipelines:
   - pipeline: azure-pipelines
+    source: azure-pipelines
   repositories:
   - repository: azure pipelines  # identifier (A-Z, a-z, 0-9, and underscore)
     type: git  # see the following "Type" topic
