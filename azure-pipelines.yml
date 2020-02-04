@@ -1,4 +1,4 @@
-Stages:
+stages:
   - stage: Deploy
     jobs:
     - job: deploy dev
