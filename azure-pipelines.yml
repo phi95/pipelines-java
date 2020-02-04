@@ -1,4 +1,4 @@
 extends:
-  template: jobs/stages-template.yml
+  template: jobs/stage-template.yml
   parameters:
     name: 'hello'
