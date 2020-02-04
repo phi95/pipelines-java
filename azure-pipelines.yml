@@ -5,6 +5,6 @@ resources:
     name: phi95/azure-pipelines  # repository name (format depends on `type`)
 
 extends:
-  template: azure-pipelines/azure-pipelines.yml
+  template: stages-template.yml
   parameters:
     name: 'hello'
