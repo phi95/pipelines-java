@@ -1,4 +1,4 @@
-extends:
+stages:
   template: jobs/stage-template.yml
   parameters:
     name: 'hello'
