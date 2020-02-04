@@ -1,16 +1,16 @@
 Stages:
   - stage: Deploy
     jobs:
-	- job: deploy dev
-	  steps:
-	  - bash: echo "dev"
-	  trigger:
-	  - development
-	  environment: dev
-    
-	- job: deploy qa
-	  steps:
-	  - bash: echo "qa"
-	  trigger:
-	  - qa
-	  environment: qa
+    - job: deploy dev
+      steps:
+      - bash: echo "dev"
+      trigger:
+      - development
+      environment: dev
+      
+      - job: deploy qa
+      steps:
+      - bash: echo "qa"
+      trigger:
+      - qa
+      environment: qa
