@@ -1,4 +1,3 @@
-extends:
-  template: jobs/stage-template.yml
-  parameters:
-    name: 'hello'
+stages:
+  stage: build maven
+  - template: jobs/maven-build.yml
