@@ -1,2 +1,3 @@
 stages:
-  - stage: jobs/build-maven.yml
+  - stage: 
+      - template: jobs/build-maven.yml
