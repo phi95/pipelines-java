@@ -1,7 +1,7 @@
 stages: 
-  stage:
+  stage: build
     jobs:
-      job:
+      job: build maven
         steps:
           - task: Maven@3
             inputs:
