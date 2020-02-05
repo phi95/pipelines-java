@@ -1,7 +1,6 @@
-stage: 
-  jobs:
-    job: build
-      steps:
+stages: 
+  stage:
+    steps:
       - task: Maven@3
       inputs:
       mavenPomFile: 'pom.xml'
