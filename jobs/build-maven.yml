@@ -1,8 +1,7 @@
-- stage: build
-  jobs:
-    - job: build_maven
-      steps:
-      - script: mvn install -Dmaven.test.skip
-      - task: PublishPipelineArtifact@1
-        inputs:
-          path: $(System.DefaultWorkingDirectory)/target
+jobs:
+  - job: build_maven
+    steps:
+    - script: mvn install -Dmaven.test.skip
+    - task: PublishPipelineArtifact@1
+      inputs:
+        path: $(System.DefaultWorkingDirectory)/target
