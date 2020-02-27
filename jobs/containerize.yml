@@ -6,9 +6,9 @@ jobs:
 - job: containerize_master
   steps:
   - bash: echo ${{ parameters.branch }}
-  condition: and(succeeded(), eq(variables['branch'], 'refs/heads/master'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master'))
 
 - job: containerize_development
   steps:
   - bash: echo ${{ parameters.branch }}
-  condition: and(succeeded(), eq(variables['branch'], 'refs/heads/development'))
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/development'))
