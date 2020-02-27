@@ -1,5 +1,5 @@
 parameters:
-- name: name
+- name: branch
   type: string
   
 stages:
@@ -7,4 +7,4 @@ stages:
   jobs:
   - job: test1
     steps:
-    - bash: echo ${{ parameters.name }}
+    - bash: echo ${{ parameters.branch }}

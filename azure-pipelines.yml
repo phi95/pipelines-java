@@ -2,3 +2,9 @@ stages:
   - stage: build
     jobs:
       - template: jobs/build-maven.yml
+
+  - stage: containerize
+    jobs:
+      - template: jobs/containerize.yml
+        parameters:
+          branch: $(Build.SourceBranch)
