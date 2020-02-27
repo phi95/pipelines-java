@@ -10,5 +10,5 @@ jobs:
 
 - job: containerize development
   steps:
-    - bash: echo ${{ parameters.branch }}
-    condition: and(succeeded(), eq(variables['branch'], 'refs/heads/development'))
+  - bash: echo ${{ parameters.branch }}
+  condition: and(succeeded(), eq(variables['branch'], 'refs/heads/development'))
