@@ -3,6 +3,12 @@ parameters:
   type: string
   
 jobs:
-- job: test1
+- job: containerize master
   steps:
   - bash: echo ${{ parameters.branch }}
+  condition: and(succeeded(), eq(variables['branch'], 'refs/heads/master'))
+
+- job: containerize development
+  steps:
+    - bash: echo ${{ parameters.branch }}
+    condition: and(succeeded(), eq(variables['branch'], 'refs/heads/development'))
