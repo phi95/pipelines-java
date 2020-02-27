@@ -2,9 +2,7 @@ parameters:
 - name: branch
   type: string
   
-stages:
-- stage: Test
-  jobs:
-  - job: test1
-    steps:
-    - bash: echo ${{ parameters.branch }}
+jobs:
+- job: test1
+  steps:
+  - bash: echo ${{ parameters.branch }}
